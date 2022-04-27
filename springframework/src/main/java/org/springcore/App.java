@@ -14,7 +14,9 @@ public class App
         Student student;
      ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
      student=(Student) context.getBean("student1");
+     Student student2=(Student)context.getBean("student2");
      System.out.println(student);
+     System.out.println(student2);
 
     }
 }
