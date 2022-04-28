@@ -2,6 +2,7 @@ package org.springcore.collections;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class Emp {
@@ -9,6 +10,16 @@ public class Emp {
     private List<String> phones;
     private Set<String> address;
     private Map<String,String> courses;
+
+    private Properties props;
+
+    public void setProps(Properties props) {
+        this.props = props;
+    }
+
+    public Properties getProps() {
+        return props;
+    }
 
     public String getName() {
         return name;
@@ -45,10 +56,11 @@ public class Emp {
     public Emp() {
     }
 
-    public Emp(String name, List<String> phones, Set<String> address, Map<String, String> courses) {
+    public Emp(String name, List<String> phones, Set<String> address, Map<String, String> courses,Properties props) {
         this.name = name;
         this.phones = phones;
         this.address = address;
         this.courses = courses;
+        this.props=props;
     }
 }

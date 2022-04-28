@@ -30,6 +30,14 @@
                 <entry key="Dart" value="Flutter"/>
             </map>
         </property>
+
+        <property name="props">
+            <props>
+                <prop key="e-mail">prabesh.bista19090@gmail.com</prop>
+                <prop key="password">LOL</prop>
+            </props>
+
+        </property>
     </bean>
 
 </beans>

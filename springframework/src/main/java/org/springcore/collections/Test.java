@@ -9,7 +9,7 @@ public class Test {
         Emp emp;
         ApplicationContext context=new ClassPathXmlApplicationContext("collectionsConfig.xml");
         emp=(Emp) context.getBean("emp1");
-        System.out.println(emp.getCourses());
+        System.out.println(emp.getProps());
     }
 
 
