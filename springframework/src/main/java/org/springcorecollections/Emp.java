@@ -1,4 +1,4 @@
-package org.springcore.collections;
+package org.springcorecollections;
 
 import java.util.List;
 import java.util.Map;
