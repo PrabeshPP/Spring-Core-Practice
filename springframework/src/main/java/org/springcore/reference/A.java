@@ -27,4 +27,12 @@ public class A {
     public void setbObj(B bObj) {
         this.bObj = bObj;
     }
+
+    @Override
+    public String toString() {
+        return "A{" +
+                "age=" + age +
+                ", bObj=" + bObj +
+                '}';
+    }
 }
