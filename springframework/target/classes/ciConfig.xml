@@ -12,6 +12,14 @@
         <constructor-arg  value="20" type="int"/>
         <constructor-arg  value="Prabesh Bista" />
         <constructor-arg  name="certificate" ref="certRef"/>
+        <constructor-arg name="list">
+           <list>
+               <value>Prabesh</value>
+               <value>Carlo</value>
+               <value>Rocky</value>
+               <value>nole</value>
+           </list>
+        </constructor-arg>
     </bean>
 
 
