@@ -11,7 +11,7 @@
     <bean class="org.springcore.ci.Person" name="ci1">
         <constructor-arg  value="20" type="int"/>
         <constructor-arg  value="Prabesh Bista" />
-        <constructor-arg value="certRef"/>
+        <constructor-arg  name="certificate" ref="certRef"/>
     </bean>
 
 

@@ -12,8 +12,9 @@ public class Person {
        this.certificate=certificate;
    }
 
+   @Override
    public String toString(){
-       return this.name+" of "+this.age +" has completed "+this.certificate+"course on Ugiveme";
+       return this.name+" of "+this.age +" has completed "+this.certificate+" "+"course on Ugiveme";
    }
 
 }
