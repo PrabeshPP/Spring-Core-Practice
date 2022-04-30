@@ -24,6 +24,7 @@ public class Addition {
         }
 
         public void doSum(){
+            System.out.println("Value1:"+value1+" Value2:"+value2);
             System.out.println("Sum is:"+(value2+value1));
         }
 
