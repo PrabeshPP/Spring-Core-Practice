@@ -22,6 +22,11 @@
         </constructor-arg>
     </bean>
 
+    <bean class="org.springcore.ci.Addition" name="add">
+        <constructor-arg value="200" type="int"/>
+        <constructor-arg value="400" type="int"/>
+    </bean>
+
 
 
 </beans>
