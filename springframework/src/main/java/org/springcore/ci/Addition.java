@@ -15,5 +15,9 @@ public class Addition {
             System.out.println("Constructor:double,double");
         }
 
+        public void doSum(){
+            System.out.println("Sum is:"+value2+value1);
+        }
+
 
 }
