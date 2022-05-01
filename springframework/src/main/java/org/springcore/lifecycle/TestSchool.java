@@ -9,6 +9,7 @@ public class TestSchool {
         AbstractApplicationContext context=new ClassPathXmlApplicationContext("schoolLC.xml");
         School school=(School)context.getBean("school");
         System.out.println(school);
+        //It calls the destroy method
         context.registerShutdownHook();
     }
 
