@@ -1,5 +1,8 @@
 package org.springcore.lifecycle;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Company {
     private String name;
     private double revenue;
@@ -29,5 +32,15 @@ public class Company {
                 "name='" + name + '\'' +
                 ", revenue=" + revenue +
                 '}';
+    }
+
+    @PostConstruct
+    public  void start(){
+        System.out.println("Starting point");
+    }
+
+    @PreDestroy
+    public  void end(){
+        System.out.println("End point");
     }
 }

@@ -11,9 +11,12 @@ public class TestSchool {
 //        System.out.println(school);
 //        //Register shutDown hook
 //        context.registerShutdownHook();
+//
+//        Coder coder=(Coder) context.getBean("coder");
+//        System.out.println(coder);
 
-        Coder coder=(Coder) context.getBean("coder");
-        System.out.println(coder);
+        Company company=(Company) context.getBean("company");
+        System.out.println(company);
         context.registerShutdownHook();
     }
 
