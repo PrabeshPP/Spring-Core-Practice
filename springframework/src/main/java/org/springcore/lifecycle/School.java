@@ -18,6 +18,7 @@ public class School {
     }
 
     public void setName(String name) {
+        System.out.println("Setting Property");
         this.name = name;
     }
 
