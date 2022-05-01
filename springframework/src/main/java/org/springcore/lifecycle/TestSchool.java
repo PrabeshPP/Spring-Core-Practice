@@ -7,10 +7,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestSchool {
     public static void main(String[] args) {
         AbstractApplicationContext context=new ClassPathXmlApplicationContext("schoolLC.xml");
-        School school=(School)context.getBean("school");
-        System.out.println(school);
-        //Register shutDown hook
-        context.registerShutdownHook();
+//        School school=(School)context.getBean("school");
+//        System.out.println(school);
+//        //Register shutDown hook
+//        context.registerShutdownHook();
+
+        Coder coder=(Coder) context.getBean("coder");
+        System.out.println(coder);
     }
 
 }

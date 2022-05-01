@@ -4,5 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="org.springcore.lifecycle.School" name="school"  init-method="init" destroy-method="destroy" p:address="New Baneshwor" p:name="Big Boss" p:toalStudent="1200" />
+    <bean class="org.springcore.lifecycle.Coder" name="coder" p:name="Prabesh" p:favouriteLanguage="Java" />
 
 </beans>
