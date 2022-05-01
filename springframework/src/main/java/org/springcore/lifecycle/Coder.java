@@ -1,6 +1,9 @@
 package org.springcore.lifecycle;
 
-public class Coder {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Coder implements InitializingBean, DisposableBean {
     private String name;
     private String favouriteLanguage;
 
@@ -29,5 +32,17 @@ public class Coder {
                 "name='" + name + '\'' +
                 ", favouriteLanguage='" + favouriteLanguage + '\'' +
                 '}';
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("Coder initialized");
+
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("Coder destroyed");
+
     }
 }

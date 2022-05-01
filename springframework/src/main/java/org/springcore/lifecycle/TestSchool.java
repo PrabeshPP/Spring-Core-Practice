@@ -14,6 +14,7 @@ public class TestSchool {
 
         Coder coder=(Coder) context.getBean("coder");
         System.out.println(coder);
+        context.registerShutdownHook();
     }
 
 }
