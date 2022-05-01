@@ -12,5 +12,22 @@ public class Company {
         return revenue;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setRevenue(double revenue) {
+        this.revenue = revenue;
+    }
+
+    public Company() {
+    }
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "name='" + name + '\'' +
+                ", revenue=" + revenue +
+                '}';
+    }
 }
