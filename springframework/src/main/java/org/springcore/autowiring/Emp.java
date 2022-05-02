@@ -19,4 +19,11 @@ public class Emp {
         this.address=address;
 
     }
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "address=" + address +
+                '}';
+    }
 }
