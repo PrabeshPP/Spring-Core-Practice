@@ -1,9 +1,12 @@
 package org.springcore.autowiring.annotation;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class Emp {
+    @Autowired
     private Address address;
 
     public Address getAddress() {
