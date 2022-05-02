@@ -8,6 +8,10 @@
         <property name="city" value="Lalitpur"/>
         <property name="street" value="Kodaku Chowk"/>
     </bean>
+    <bean class="org.springcore.autowiring.annotation.Address" name="address1">
+        <property name="city" value="kathmandu"/>
+        <property name="street" value="Kodaku Chowk"/>
+    </bean>
 
     <bean class="org.springcore.autowiring.annotation.Emp" name="emp1" />
 
