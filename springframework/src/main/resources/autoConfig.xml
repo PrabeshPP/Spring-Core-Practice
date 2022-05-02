@@ -9,7 +9,7 @@
         <property name="street" value="Kodaku Chowk"/>
     </bean>
 
-    <bean class="org.springcore.autowiring.Emp" name="emp1" autowire="byType"/>
+    <bean class="org.springcore.autowiring.Emp" name="emp1" autowire="constructor"/>
 
 
 
