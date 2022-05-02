@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean name="refB" class="org.springcore.reference.B">
+    <bean name="refB" class="org.springcore.lifecycle.reference.B">
         <property name="name" value="Prabesh Bista"/>
         <property name="score" value="2000"/>
     </bean>
 
-    <bean name="dependA" class="org.springcore.reference.A">
+    <bean name="dependA" class="org.springcore.lifecycle.reference.A">
         <property name="age" value="20"/>
         <property name="bObj" ref="refB"/>
     </bean>

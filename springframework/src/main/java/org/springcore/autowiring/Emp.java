@@ -1,5 +1,8 @@
 package org.springcore.autowiring;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Emp {
     private Address address;
 
@@ -25,5 +28,15 @@ public class Emp {
         return "Emp{" +
                 "address=" + address +
                 '}';
+    }
+
+    @PostConstruct
+    public void start(){
+        System.out.println("Initializing.....");
+    }
+
+    @PreDestroy
+    public  void end(){
+        System.out.println("Disposing....");
     }
 }
