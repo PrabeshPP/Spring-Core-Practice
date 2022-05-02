@@ -1,4 +1,4 @@
-package org.springcore.reference;
+package org.springcore.lifecycle.reference;
 
 public class B {
     private String name;

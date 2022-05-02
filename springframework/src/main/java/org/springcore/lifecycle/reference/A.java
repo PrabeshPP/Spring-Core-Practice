@@ -1,4 +1,4 @@
-package org.springcore.reference;
+package org.springcore.lifecycle.reference;
 
 public class A {
     private int age;
