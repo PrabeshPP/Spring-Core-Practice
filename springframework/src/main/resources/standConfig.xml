@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       https://www.springframework.org/schema/util/spring-util.xsd">
 
+    <util:list list-class="java.util.LinkedList" id="list">
+        <value>Prabesh</value>
+        <value>Tom</value>
+        <value>Cat</value>
+        <value>Frooti</value>
+
+
+
+    </util:list>
+
+    <bean class="org.springcore.standalone.collections.Temp" name="temp">
+    <property name="friends" ref="list"/>
+
+
+</bean>
 
 </beans>
