@@ -2,10 +2,21 @@ package org.springcore.standalone.collections;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class Temp {
     private List<String> friends;
     private Map<String,String> menu;
+
+    private Properties properties;
+
+    public Properties getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Properties properties) {
+        this.properties = properties;
+    }
 
     public List<String> getFriends() {
         return friends;
@@ -28,6 +39,7 @@ public class Temp {
         return "Temp{" +
                 "friends=" + friends +
                 ", menu=" + menu +
+                ", properties=" + properties +
                 '}';
     }
 }
