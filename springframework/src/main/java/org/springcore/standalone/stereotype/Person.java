@@ -1,7 +1,13 @@
 package org.springcore.standalone.stereotype;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Person {
+    @Value("Owl")
     private String name;
+    @Value("20")
     private int age;
 
     public String getName() {
@@ -18,5 +24,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
