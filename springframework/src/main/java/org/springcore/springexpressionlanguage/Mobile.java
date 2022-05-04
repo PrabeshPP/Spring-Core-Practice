@@ -20,6 +20,9 @@ public class Mobile {
     @Value("#{new java.lang.String('One plus 7')}")
     private String model;
 
+    @Value("#{}")
+    private boolean isActive;
+
     public String getName() {
         return name;
     }
@@ -64,6 +67,14 @@ public class Mobile {
         this.model = model;
     }
 
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
     @Override
     public String toString() {
         return "Mobile{" +
@@ -72,6 +83,7 @@ public class Mobile {
                 ", square=" + square +
                 ", pi=" + pi +
                 ", model='" + model + '\'' +
+                ", isActive=" + isActive +
                 '}';
     }
 }
