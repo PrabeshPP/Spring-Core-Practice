@@ -5,6 +5,8 @@ public class Student {
     private String studentName;
     private String address;
 
+
+
     public Student(int id, String studentName, String address) {
         this.id = id;
         this.studentName = studentName;
@@ -36,6 +38,11 @@ public class Student {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+
+    public static long mulFive(long val){
+        return val*5;
     }
 
     @Override
