@@ -1,10 +1,13 @@
 package org.springcore.springexpressionlanguage;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Mobile {
+    @Value("OnePlus")
     private String name;
+    @Value("999")
     private double price;
 
     public String getName() {
