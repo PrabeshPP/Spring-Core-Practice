@@ -1,11 +1,17 @@
 package org.springcore.standalone.stereotype;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
+
+//Scope component should always be used with the component annotation
+//By default the Scope is Singleton
+//We can provide prototype/session/request
+@Scope("singleton")
 public class Person {
     @Value("Owl")
     private String name;
