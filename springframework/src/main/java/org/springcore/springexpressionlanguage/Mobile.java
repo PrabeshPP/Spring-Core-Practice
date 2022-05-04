@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class Mobile {
     @Value("OnePlus")
     private String name;
-    @Value("999")
+    @Value("#{990+9.12345}")
     private double price;
 
     public String getName() {
