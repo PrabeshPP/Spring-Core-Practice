@@ -14,6 +14,12 @@ public class Mobile {
     @Value("#{T(org.springcore.Student).mulFive(3)}")
     private long square;
 
+    @Value("#{T(Math).PI}")
+    private double pi;
+
+    @Value("#{new java.lang.String('One plus 7')}")
+    private String model;
+
     public String getName() {
         return name;
     }
@@ -38,12 +44,34 @@ public class Mobile {
         this.square = square;
     }
 
+    public double getPi() {
+        return pi;
+    }
+
+    public void setPi(long pi) {
+        this.pi = pi;
+    }
+
+    public void setPi(double pi) {
+        this.pi = pi;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     @Override
     public String toString() {
         return "Mobile{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", square=" + square +
+                ", pi=" + pi +
+                ", model='" + model + '\'' +
                 '}';
     }
 }
