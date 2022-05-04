@@ -20,7 +20,7 @@ public class Mobile {
     @Value("#{new java.lang.String('One plus 7')}")
     private String model;
 
-    @Value("#{}")
+    @Value("#{'b'>'a'}")
     private boolean isActive;
 
     public String getName() {
