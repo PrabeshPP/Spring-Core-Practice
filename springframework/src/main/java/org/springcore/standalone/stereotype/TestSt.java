@@ -11,5 +11,6 @@ public class TestSt {
         Person person1=context.getBean("person",Person.class);
         System.out.println(person1.hashCode());
 
+
     }
 }
