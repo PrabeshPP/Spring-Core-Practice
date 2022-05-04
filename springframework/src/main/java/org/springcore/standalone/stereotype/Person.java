@@ -11,7 +11,7 @@ import java.util.List;
 //Scope component should always be used with the component annotation
 //By default the Scope is Singleton
 //We can provide prototype/session/request
-@Scope("singleton")
+@Scope("prototype")
 public class Person {
     @Value("Owl")
     private String name;
