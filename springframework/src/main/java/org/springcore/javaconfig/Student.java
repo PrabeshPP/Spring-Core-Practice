@@ -1,11 +1,14 @@
 package org.springcore.javaconfig;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
+    @Value("Prabesh")
     private String name;
+    @Value("20")
     private int rollNo;
 
     public String getName() {
