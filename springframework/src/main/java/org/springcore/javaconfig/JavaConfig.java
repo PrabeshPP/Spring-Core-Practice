@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-//@ComponentScan(basePackages = "org.springcore.javaconfig")
+@ComponentScan(basePackages = "org.springcore.javaconfig")
 public class JavaConfig {
     //using a bean annotation method
     @Bean()
