@@ -5,8 +5,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestConfig {
     public static void main(String[] args) {
-        ApplicationContext context=new ClassPathXmlApplicationContext("stConfig.xml");
+        ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("stConfig.xml");
         Student student=context.getBean("student",Student.class);
         System.out.println(student);
+        context.close();
     }
 }
