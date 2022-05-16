@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="emp1" class="org.springcore.collections.Emp">
+        <property name="name" value="Prabesh"/>
+        <property name="phones">
+            <list>
+                <value>9777</value>
+                <value>1234</value>
+                <value>451745</value>
+                <value>2030</value>
+            </list>
+        </property>
+
+        <property name="address">
+            <set>
+                <value>Pokhara</value>
+                <value>Lamki</value>
+                <value>Dhangadhi</value>
+                <value>Tikapur</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="Java" value="Spring Core"/>
+                <entry key="JavaScript" value="ReactJS"/>
+                <entry key="Python" value="Django"/>
+                <entry key="Dart" value="Flutter"/>
+            </map>
+        </property>
+
+        <property name="props">
+            <props>
+                <prop key="e-mail">prabesh.bista19090@gmail.com</prop>
+                <prop key="password">LOL</prop>
+            </props>
+
+        </property>
+    </bean>
+
+</beans>
